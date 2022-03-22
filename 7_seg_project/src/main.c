@@ -26,8 +26,6 @@ void int0_reset(void)
 	SREG |= (1<<7);
 }
 
-
-
 ISR(INT0_vect)
 {
 	for(int i = 0 ; i<6 ;i++ )
@@ -41,13 +39,12 @@ ISR(TIMER0_OVF_vect)
 	tick++;
 	if(tick == NUMBER_OF_OVERFLOWS_PER_SECOND){
 		tick=0;
+		num[5]++;
 		if(num[5]== 9)
 		{
 			num[5]= 0;
 			num[4]++;
 		}
-		else
-			num[5]++;
 		if(num[4]== 6 ){
 			num[4]=0;
 			num[3]++;
