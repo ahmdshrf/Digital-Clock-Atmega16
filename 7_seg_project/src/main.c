@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
-#define NUMBER_OF_OVERFLOWS_PER_SECOND 123
+#define NUMBER_OF_OVERFLOWS_PER_SECOND 4
 
 unsigned char num[6]={0,0,0,0,0,0};
 char flag =0;
@@ -14,7 +14,7 @@ void Timer0_init_Normal_Mode(void)
 {
 	TCNT0 = 0;
 	TIMSK = (1<<TOIE0);
-	TCCR0 = (1<<FOC0) | (1<<CS02);
+	TCCR0 = (1<<FOC0) | (1<<CS02) | (1<<CS00);
 	SREG |= (1<<7);
 }
 void int0_reset(void)
