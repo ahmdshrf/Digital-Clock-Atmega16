@@ -1,4 +1,4 @@
-# Digital-Clock-Atmega16
+# StopWatch
 -	Controlled using AVR Micro-Processor (C based)
 -	Used 6 Seven-segments to count seconds, minutes and hours 
 -	Simulated using Proteus 
