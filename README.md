@@ -4,7 +4,7 @@
 -	Simulated using Proteus 
 
 ## Video of the Project
-[![Digital Clock using Atmega16](https://img.youtube.com/vi/XhQIcL70qaM/3.jpg)](https://www.youtube.com/watch?v=XhQIcL70qaM)
+[![Digital Clock using Atmega16](https://img.youtube.com/vi/XhQIcL70qaM/0.jpg)](https://www.youtube.com/watch?v=XhQIcL70qaM)
 
 ## main.c
 https://github.com/ahmdshrf/Digital-Clock-Atmega16/blob/main/7_seg_project/src/main.c
