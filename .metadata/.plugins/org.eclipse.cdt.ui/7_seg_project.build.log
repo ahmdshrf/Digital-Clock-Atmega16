@@ -1,0 +1,36 @@
+??:??:?? **** Incremental Build of configuration Debug for project 7_seg_project ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/main.c
+ 
+Building target: 7_seg_project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,7_seg_project.map -mmcu=atmega16 -o "7_seg_project.elf"  ./src/main.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+Finished building target: 7_seg_project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S 7_seg_project.elf  >"7_seg_project.lss"
+Finished building: 7_seg_project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 7_seg_project.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4518 bytes (27.6% Full)
+(.text + .data + .bootloader)
+
+Data:         17 bytes (1.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+??:??:?? Build Finished. 0 errors, 1 warnings. (took 1s.160ms)
+
